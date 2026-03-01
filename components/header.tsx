@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
 import { cn } from "@/utils/cn";
+import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
 import Logo from "./logo";
 
 const navLinks = [
@@ -29,7 +29,7 @@ export default function Header() {
         "fixed top-0 z-50 w-full border-b transition-all duration-300",
         scrolled
           ? "border-border/50 bg-background/80 backdrop-blur-xl"
-          : "border-transparent bg-transparent"
+          : "border-transparent bg-transparent",
       )}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
@@ -40,7 +40,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="text-muted-foreground hover:text-foreground text-sm transition-colors"
             >
               {link.label}
             </a>
@@ -52,7 +52,7 @@ export default function Header() {
             href="https://chrome.google.com/webstore"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-9 items-center rounded-lg bg-accent px-4 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
+            className="bg-accent text-accent-foreground inline-flex h-9 items-center rounded-lg px-4 text-sm font-medium transition-opacity hover:opacity-90"
           >
             Add to Chrome
           </a>
@@ -60,7 +60,7 @@ export default function Header() {
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-foreground md:hidden"
+          className="text-muted-foreground hover:text-foreground inline-flex items-center justify-center rounded-md p-2 md:hidden"
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X size={20} /> : <Menu size={20} />}
@@ -68,14 +68,14 @@ export default function Header() {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-border bg-background px-6 py-4 md:hidden">
+        <div className="border-border bg-background border-t px-6 py-4 md:hidden">
           <nav className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                className="text-muted-foreground hover:text-foreground text-sm transition-colors"
               >
                 {link.label}
               </a>
@@ -84,7 +84,7 @@ export default function Header() {
               href="https://chrome.google.com/webstore"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-9 items-center justify-center rounded-lg bg-accent px-4 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
+              className="bg-accent text-accent-foreground inline-flex h-9 items-center justify-center rounded-lg px-4 text-sm font-medium transition-opacity hover:opacity-90"
             >
               Add to Chrome
             </a>

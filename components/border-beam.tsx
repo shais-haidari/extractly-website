@@ -12,7 +12,7 @@ export default function BorderBeam({
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit]">
       <div
-        className="absolute aspect-square animate-border-beam"
+        className="animate-border-beam absolute aspect-square"
         style={
           {
             width: size,

@@ -1,9 +1,9 @@
 "use client";
 
-import { useRef, useState, useEffect, useCallback } from "react";
-import { Eye, Camera, FileCode } from "lucide-react";
-import SectionLabel from "./section-label";
 import { cn } from "@/utils/cn";
+import { Camera, Eye, FileCode } from "lucide-react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import SectionLabel from "./section-label";
 
 const tabs = [
   {
@@ -58,17 +58,17 @@ export default function Showcase() {
   }, [updatePill]);
 
   return (
-    <section className="border-t border-border/50 py-20 md:py-28">
+    <section className="border-border/50 border-t py-20 md:py-28">
       <div className="mx-auto max-w-4xl px-6">
         <SectionLabel label="In Action" heading="See it in action" />
 
         <div className="mt-12 flex justify-center">
           <div
             ref={containerRef}
-            className="relative inline-flex rounded-xl border border-border bg-muted/50 p-1"
+            className="border-border bg-muted/50 relative inline-flex rounded-xl border p-1"
           >
             <div
-              className="absolute top-1 bottom-1 rounded-lg bg-background shadow-sm transition-all duration-300 ease-out"
+              className="bg-background absolute top-1 bottom-1 rounded-lg shadow-sm transition-all duration-300 ease-out"
               style={{ left: pillStyle.left, width: pillStyle.width }}
             />
             {tabs.map((tab) => (
@@ -82,7 +82,7 @@ export default function Showcase() {
                   "relative z-10 inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-colors duration-200",
                   activeTab === tab.id
                     ? "text-foreground"
-                    : "text-muted-foreground hover:text-foreground"
+                    : "text-muted-foreground hover:text-foreground",
                 )}
               >
                 <tab.icon size={16} />
@@ -100,36 +100,34 @@ export default function Showcase() {
                 "text-center transition-all duration-400 ease-in-out",
                 activeTab === tab.id
                   ? "relative opacity-100"
-                  : "pointer-events-none absolute inset-x-0 top-0 opacity-0"
+                  : "pointer-events-none absolute inset-x-0 top-0 opacity-0",
               )}
             >
               <h3 className="text-lg font-semibold">{tab.title}</h3>
-              <p className="mx-auto mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
+              <p className="text-muted-foreground mx-auto mt-2 max-w-xl text-sm leading-relaxed">
                 {tab.description}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="relative mt-8 overflow-hidden rounded-2xl border border-border bg-muted/50 shadow-xl">
+        <div className="border-border bg-muted/50 relative mt-8 overflow-hidden rounded-2xl border shadow-xl">
           {tabs.map((tab) => (
             <div
               key={tab.id}
               className={cn(
-                "flex aspect-video items-center justify-center bg-linear-to-br from-muted to-muted/80 text-muted-foreground transition-all duration-400 ease-in-out",
+                "from-muted to-muted/80 text-muted-foreground flex aspect-video items-center justify-center bg-linear-to-br transition-all duration-400 ease-in-out",
                 activeTab === tab.id
                   ? "relative opacity-100"
-                  : "pointer-events-none absolute inset-0 opacity-0"
+                  : "pointer-events-none absolute inset-0 opacity-0",
               )}
             >
               <div className="text-center">
-                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10">
+                <div className="bg-accent/10 mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl">
                   <tab.icon size={24} className="text-accent" />
                 </div>
-                <p className="text-sm font-medium">
-                  {tab.label} Screenshot
-                </p>
-                <p className="mt-1 text-xs text-muted-foreground">
+                <p className="text-sm font-medium">{tab.label} Screenshot</p>
+                <p className="text-muted-foreground mt-1 text-xs">
                   Replace with actual screenshot
                 </p>
               </div>

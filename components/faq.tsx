@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { ChevronDown } from "lucide-react";
-import SectionLabel from "./section-label";
 import { cn } from "@/utils/cn";
+import { ChevronDown } from "lucide-react";
+import { useState } from "react";
+import SectionLabel from "./section-label";
 
 const faqs = [
   {
@@ -42,11 +42,11 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="border-t border-border/50 py-20 md:py-28">
+    <section id="faq" className="border-border/50 border-t py-20 md:py-28">
       <div className="mx-auto max-w-3xl px-6">
         <SectionLabel label="FAQ" heading="Frequently asked questions" />
 
-        <div className="mt-12 divide-y divide-border">
+        <div className="divide-border mt-12 divide-y">
           {faqs.map((faq, i) => (
             <div key={i}>
               <button
@@ -59,8 +59,8 @@ export default function FAQ() {
                 <ChevronDown
                   size={18}
                   className={cn(
-                    "shrink-0 text-muted-foreground transition-transform duration-200",
-                    openIndex === i && "rotate-180"
+                    "text-muted-foreground shrink-0 transition-transform duration-200",
+                    openIndex === i && "rotate-180",
                   )}
                 />
               </button>
@@ -69,11 +69,11 @@ export default function FAQ() {
                   "grid transition-all duration-200",
                   openIndex === i
                     ? "grid-rows-[1fr] pb-5 opacity-100"
-                    : "grid-rows-[0fr] opacity-0"
+                    : "grid-rows-[0fr] opacity-0",
                 )}
               >
                 <div className="overflow-hidden">
-                  <p className="text-sm leading-relaxed text-muted-foreground">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>

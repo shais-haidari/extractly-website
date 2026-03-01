@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import Header from "@/components/header";
 import { geistMono, geistSans } from "@/config/fonts";
 import { cn } from "@/utils/cn";
-import Header from "@/components/header";
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
     default: "StorageKit — The Missing DevTools Panel for Browser Storage",
-    template: "%s — StorageKit"
+    template: "%s — StorageKit",
   },
   description:
     "Inspect, edit, and manage Local storage, Session storage, and Cookies in one clean, powerful Chrome DevTools panel.",
@@ -33,11 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn(
-          geistSans.variable,
-          geistMono.variable,
-          "antialiased"
-        )}
+        className={cn(geistSans.variable, geistMono.variable, "antialiased")}
       >
         <Header />
         {children}

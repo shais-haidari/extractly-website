@@ -1,4 +1,4 @@
-import { Users, Bug, Share2, KeyRound } from "lucide-react";
+import { Bug, KeyRound, Share2, Users } from "lucide-react";
 import SectionLabel from "./section-label";
 
 const useCases = [
@@ -30,7 +30,10 @@ const useCases = [
 
 export default function UseCases() {
   return (
-    <section id="use-cases" className="border-t border-border/50 py-20 md:py-28">
+    <section
+      id="use-cases"
+      className="border-border/50 border-t py-20 md:py-28"
+    >
       <div className="mx-auto max-w-6xl px-6">
         <SectionLabel
           label="Use Cases"
@@ -41,14 +44,14 @@ export default function UseCases() {
           {useCases.map((useCase) => (
             <div
               key={useCase.title}
-              className="flex gap-4 rounded-2xl border border-border bg-muted/30 p-6 transition-colors hover:border-accent/30 hover:bg-muted/60"
+              className="border-border bg-muted/30 hover:border-accent/30 hover:bg-muted/60 flex gap-4 rounded-2xl border p-6 transition-colors"
             >
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
+              <div className="bg-accent/10 text-accent flex h-10 w-10 shrink-0 items-center justify-center rounded-xl">
                 <useCase.icon size={20} />
               </div>
               <div>
                 <h3 className="font-semibold">{useCase.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
                   {useCase.description}
                 </p>
               </div>

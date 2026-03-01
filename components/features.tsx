@@ -1,9 +1,9 @@
 import {
-  Eye,
-  Camera,
-  Globe,
-  FileCode,
   ArrowDownUp,
+  Camera,
+  Eye,
+  FileCode,
+  Globe,
   ShieldCheck,
 } from "lucide-react";
 import SectionLabel from "./section-label";
@@ -49,13 +49,13 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="border-t border-border/50 py-20 md:py-28">
+    <section id="features" className="border-border/50 border-t py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <SectionLabel
           label="Features"
           heading="Everything you need to debug storage"
         />
-        <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground">
+        <p className="text-muted-foreground mx-auto mt-4 max-w-2xl text-center">
           A complete toolkit for inspecting, managing, and debugging browser
           storage, built right into your DevTools.
         </p>
@@ -64,13 +64,13 @@ export default function Features() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group rounded-2xl border border-border bg-muted/30 p-6 transition-colors hover:border-accent/30 hover:bg-muted/60"
+              className="group border-border bg-muted/30 hover:border-accent/30 hover:bg-muted/60 rounded-2xl border p-6 transition-colors"
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 text-accent transition-colors group-hover:bg-accent/20">
+              <div className="bg-accent/10 text-accent group-hover:bg-accent/20 flex h-10 w-10 items-center justify-center rounded-xl transition-colors">
                 <feature.icon size={20} />
               </div>
               <h3 className="mt-4 text-base font-semibold">{feature.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
                 {feature.description}
               </p>
             </div>

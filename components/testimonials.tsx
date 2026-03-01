@@ -7,40 +7,50 @@ import SectionLabel from "./section-label";
 const testimonials = [
   {
     name: "Alex Chen",
-    quote: "Switching between user states used to mean logging out and back in. Now I just restore a snapshot.",
+    quote:
+      "Switching between user states used to mean logging out and back in. Now I just restore a snapshot.",
   },
   {
     name: "Sarah Miller",
-    quote: "The JWT decoding alone is worth installing. No more jumping to external tools.",
+    quote:
+      "The JWT decoding alone is worth installing. No more jumping to external tools.",
   },
   {
     name: "James Park",
-    quote: "I export storage snapshots for bug reports. The dev team can reproduce issues instantly.",
+    quote:
+      "I export storage snapshots for bug reports. The dev team can reproduce issues instantly.",
   },
   {
     name: "Priya Sharma",
-    quote: "Finally, a storage panel that doesn't feel like an afterthought. Clean, fast, and reliable.",
+    quote:
+      "Finally, a storage panel that doesn't feel like an afterthought. Clean, fast, and reliable.",
   },
   {
     name: "Marcus Lee",
-    quote: "We onboard new developers with shared snapshots. Saves hours of environment setup.",
+    quote:
+      "We onboard new developers with shared snapshots. Saves hours of environment setup.",
   },
   {
     name: "Elena Torres",
-    quote: "The live inspector is incredibly smooth. I can edit storage values and see results in real time.",
+    quote:
+      "The live inspector is incredibly smooth. I can edit storage values and see results in real time.",
   },
 ];
 
-function TestimonialCard({ testimonial }: { testimonial: (typeof testimonials)[number] }) {
+function TestimonialCard({
+  testimonial,
+}: {
+  testimonial: (typeof testimonials)[number];
+}) {
   return (
-    <div className="mx-3 w-[300px] shrink-0 rounded-xl border border-border bg-muted/30 p-5">
+    <div className="border-border bg-muted/30 mx-3 w-[300px] shrink-0 rounded-xl border p-5">
       <div className="flex gap-0.5">
         {Array.from({ length: 5 }).map((_, i) => (
           <Star key={i} size={12} className="fill-accent text-accent" />
         ))}
       </div>
 
-      <blockquote className="mt-3 text-sm leading-relaxed text-muted-foreground">
+      <blockquote className="text-muted-foreground mt-3 text-sm leading-relaxed">
         &ldquo;{testimonial.quote}&rdquo;
       </blockquote>
 
@@ -53,7 +63,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="border-t border-border/50 py-20 md:py-28"
+      className="border-border/50 border-t py-20 md:py-28"
     >
       <div className="mx-auto max-w-6xl px-6">
         <SectionLabel label="Testimonials" heading="Loved by developers" />

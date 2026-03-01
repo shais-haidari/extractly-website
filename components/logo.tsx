@@ -1,10 +1,13 @@
-import Link from "next/link";
-import Image from "next/image";
 import icon from "@/assets/icon.svg";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Logo() {
   return (
-    <Link href="/" className="group flex items-center gap-2 text-lg font-bold tracking-tight">
+    <Link
+      href="/"
+      className="group flex items-center gap-2 text-lg font-bold tracking-tight"
+    >
       <Image
         src={icon}
         alt="StorageKit"

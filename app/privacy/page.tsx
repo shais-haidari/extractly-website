@@ -11,7 +11,7 @@ export default function PrivacyPage() {
       <main className="mx-auto max-w-3xl px-6 pt-32 pb-16">
         <article className="prose prose-base prose-neutral dark:prose-invert max-w-none">
           <h1 className="mb-0">Privacy Policy</h1>
-          <p className="text-sm text-muted-foreground mt-2">
+          <p className="text-muted-foreground mt-2 text-sm">
             Last updated: March 1, 2026
           </p>
 
@@ -25,8 +25,7 @@ export default function PrivacyPage() {
           <h2>Data Collection</h2>
           <p>
             <strong>
-              StorageKit does not collect, transmit, or store any personal
-              data.
+              StorageKit does not collect, transmit, or store any personal data.
             </strong>{" "}
             The extension does not include analytics, tracking scripts, or any
             mechanism for sending data to external servers.
@@ -34,8 +33,8 @@ export default function PrivacyPage() {
 
           <h2>Data Access</h2>
           <p>
-            To function, StorageKit accesses the following browser storage
-            types on the active tab:
+            To function, StorageKit accesses the following browser storage types
+            on the active tab:
           </p>
           <ul>
             <li>Local storage</li>
@@ -43,21 +42,21 @@ export default function PrivacyPage() {
             <li>Cookies</li>
           </ul>
           <p>
-            This data is only accessed locally within your browser. It is
-            never sent to any external service.
+            This data is only accessed locally within your browser. It is never
+            sent to any external service.
           </p>
 
           <h2>Snapshots</h2>
           <p>
             Snapshots (saved storage states) are stored using Chrome&apos;s
-            built-in extension storage API. This data remains on your device
-            and is synced only if you have Chrome Sync enabled for extensions.
+            built-in extension storage API. This data remains on your device and
+            is synced only if you have Chrome Sync enabled for extensions.
           </p>
 
           <h2>Third-Party Services</h2>
           <p>
-            StorageKit does not integrate with any third-party services,
-            APIs, or analytics platforms.
+            StorageKit does not integrate with any third-party services, APIs,
+            or analytics platforms.
           </p>
 
           <h2>Permissions</h2>
@@ -75,15 +74,15 @@ export default function PrivacyPage() {
               current site
             </li>
             <li>
-              <strong>Storage</strong>: to persist your snapshots across
-              browser sessions
+              <strong>Storage</strong>: to persist your snapshots across browser
+              sessions
             </li>
           </ul>
 
           <h2>Changes to This Policy</h2>
           <p>
-            If this privacy policy is updated, the changes will be reflected
-            on this page with an updated date.
+            If this privacy policy is updated, the changes will be reflected on
+            this page with an updated date.
           </p>
 
           <h2>Contact</h2>

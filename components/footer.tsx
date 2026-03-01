@@ -3,12 +3,12 @@ import Logo from "./logo";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border/50 py-12">
+    <footer className="border-border/50 border-t py-12">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div>
             <Logo />
-            <p className="mt-1 text-sm text-muted-foreground">
+            <p className="text-muted-foreground mt-1 text-sm">
               The DevTools panel your browser storage deserves.
             </p>
           </div>
@@ -18,27 +18,27 @@ export default function Footer() {
               href="https://chrome.google.com/webstore"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="text-muted-foreground hover:text-foreground text-sm transition-colors"
             >
               Chrome Web Store
             </a>
             <Link
               href="/privacy"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="text-muted-foreground hover:text-foreground text-sm transition-colors"
             >
               Privacy Policy
             </Link>
           </nav>
         </div>
 
-        <div className="mt-8 border-t border-border/50 pt-6 text-center text-sm text-muted-foreground">
+        <div className="border-border/50 text-muted-foreground mt-8 border-t pt-6 text-center text-sm">
           <p>
             Built by{" "}
             <a
               href="https://www.hassib.co"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-foreground transition-colors hover:text-accent"
+              className="text-foreground hover:text-accent font-medium transition-colors"
             >
               Hassib Moddasser
             </a>
