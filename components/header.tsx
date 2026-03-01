@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/utils/cn";
-import Logo from "./Logo";
+import Logo from "./logo";
 
 const navLinks = [
   { label: "Features", href: "/#features" },

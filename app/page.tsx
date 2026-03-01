@@ -1,12 +1,12 @@
-import Hero from "./components/Hero";
-import Problem from "./components/Problem";
-import Features from "./components/Features";
-import Showcase from "./components/Showcase";
-import Testimonials from "./components/Testimonials";
-import UseCases from "./components/UseCases";
-import FAQ from "./components/FAQ";
-import CTA from "./components/CTA";
-import Footer from "./components/Footer";
+import Hero from "@/components/hero";
+import Problem from "@/components/problem";
+import Features from "@/components/features";
+import Showcase from "@/components/showcase";
+import Testimonials from "@/components/testimonials";
+import UseCases from "@/components/use-cases";
+import FAQ from "@/components/faq";
+import CTA from "@/components/cta";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (

@@ -2,7 +2,7 @@
 
 import { Star } from "lucide-react";
 import Marquee from "react-fast-marquee";
-import SectionLabel from "./SectionLabel";
+import SectionLabel from "./section-label";
 
 const testimonials = [
   {

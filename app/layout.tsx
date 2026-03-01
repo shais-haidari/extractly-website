@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { geistMono, geistSans } from "@/config/fonts";
 import { cn } from "@/utils/cn";
-import Header from "./components/Header";
+import Header from "@/components/header";
 
 export const metadata: Metadata = {
   title: {

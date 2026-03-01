@@ -6,7 +6,7 @@ import {
   ArrowDownUp,
   ShieldCheck,
 } from "lucide-react";
-import SectionLabel from "./SectionLabel";
+import SectionLabel from "./section-label";
 
 const features = [
   {

@@ -2,7 +2,7 @@
 
 import { useRef, useState, useEffect, useCallback } from "react";
 import { Eye, Camera, FileCode } from "lucide-react";
-import SectionLabel from "./SectionLabel";
+import SectionLabel from "./section-label";
 import { cn } from "@/utils/cn";
 
 const tabs = [

@@ -1,5 +1,5 @@
 import { Users, Bug, Share2, KeyRound } from "lucide-react";
-import SectionLabel from "./SectionLabel";
+import SectionLabel from "./section-label";
 
 const useCases = [
   {
