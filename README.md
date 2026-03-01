@@ -35,11 +35,11 @@ npm run format    # Format code with Prettier
 
 ```
 app/
-├── components/       # Reusable UI components
 ├── privacy/          # Privacy policy page
 ├── globals.css       # Global styles and animations
 ├── layout.tsx        # Root layout with shared header
 └── page.tsx          # Home page
+components/           # Reusable UI components
 assets/               # Static assets (logo, icons)
 config/               # App configuration (fonts, etc.)
 utils/                # Utility functions (cn, etc.)
