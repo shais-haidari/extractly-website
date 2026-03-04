@@ -28,6 +28,12 @@ export default function Footer() {
             >
               Privacy Policy
             </Link>
+            <a
+              href="mailto:info@hassib.co"
+              className="text-muted-foreground hover:text-foreground text-sm transition-colors"
+            >
+              Contact
+            </a>
           </nav>
         </div>
 

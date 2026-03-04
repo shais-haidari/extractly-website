@@ -1,3 +1,4 @@
+import BackToTop from "@/components/back-to-top";
 import Header from "@/components/header";
 import { geistMono, geistSans } from "@/config/fonts";
 import { cn } from "@/utils/cn";
@@ -37,6 +38,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <BackToTop />
       </body>
     </html>
   );

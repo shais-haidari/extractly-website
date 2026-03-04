@@ -10,13 +10,15 @@ export default function Hero() {
       </div>
 
       <div className="mx-auto max-w-6xl px-6 text-center">
-        <div className="animate-fade-in-up border-border bg-muted text-muted-foreground inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-sm">
-          <span className="relative inline-flex h-2 w-2">
-            <span className="bg-accent absolute inset-0 animate-ping rounded-full opacity-75" />
-            <span className="bg-accent relative inline-flex h-2 w-2 rounded-full" />
-          </span>
-          Now available for Chrome
-        </div>
+        <a
+          href="https://chrome.google.com/webstore"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="animate-fade-in-up border-border bg-muted text-muted-foreground hover:border-accent/30 inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm transition-colors"
+        >
+          <span className="text-amber-400">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          Rated 5.0 on Chrome Web Store
+        </a>
 
         <h1 className="animate-fade-in-up-delay-1 mx-auto mt-8 max-w-3xl text-3xl leading-tight font-bold tracking-tight md:text-5xl md:leading-[1.15]">
           The Missing DevTools Panel for{" "}
@@ -36,7 +38,7 @@ export default function Hero() {
             className="bg-accent text-accent-foreground hover:shadow-accent/25 inline-flex h-11 items-center gap-2 rounded-xl px-6 text-sm font-medium transition-shadow hover:shadow-lg"
           >
             <Chrome size={16} />
-            Add to Chrome, It&apos;s Free
+            Add to Chrome — It&apos;s Free
           </a>
           <a
             href="#features"
