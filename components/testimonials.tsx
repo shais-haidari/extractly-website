@@ -1,7 +1,4 @@
-"use client";
-
 import { Star } from "lucide-react";
-import Marquee from "react-fast-marquee";
 import SectionLabel from "./section-label";
 
 const testimonials = [
@@ -32,20 +29,19 @@ const testimonials = [
   {
     name: "Mohammad Hojjat Mahdave",
     quote:
-      "I was tired of going through the DevTools Application tab just to change a single value. A handy tool for inspecting browser storage.",
+      "I was tired of going through DevTools just to change a single value. A handy tool for inspecting browser storage.",
   },
   {
     name: "Zalmai Yaghoobi",
     quote:
-      "I've been using Storagekit for a while now, and it has made debugging much easier. With this extension, everything is in one place and clearly organized.",
+      "It has made debugging much easier. With this extension, everything is in one place and clearly organized.",
   },
   {
     name: "Omid Ibrahimy",
     quote:
-      "I've been dealing more with browser storage lately, and this extension made my life easier. I love how the storage inspection and snapshot come in one place.",
+      "I love how the storage inspection and snapshot come in one place.",
   },
 ];
-
 
 function TestimonialCard({
   testimonial,
@@ -80,30 +76,33 @@ export default function Testimonials() {
       </div>
 
       <div className="mt-16 space-y-6">
-        <Marquee
-          speed={40}
-          pauseOnHover
-          gradient
-          gradientColor="var(--background)"
-          gradientWidth={80}
-        >
-          {testimonials.map((t) => (
-            <TestimonialCard key={t.name} testimonial={t} />
-          ))}
-        </Marquee>
+        <div className="marquee-row relative overflow-hidden">
+          <div className="from-background pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-linear-to-r" />
+          <div className="from-background pointer-events-none absolute inset-y-0 right-0 z-10 w-20 bg-linear-to-l" />
 
-        <Marquee
-          speed={40}
-          pauseOnHover
-          direction="right"
-          gradient
-          gradientColor="var(--background)"
-          gradientWidth={80}
-        >
-          {[...testimonials].reverse().map((t) => (
-            <TestimonialCard key={t.name} testimonial={t} />
-          ))}
-        </Marquee>
+          <div className="animate-marquee flex w-max">
+            {testimonials.map((t) => (
+              <TestimonialCard key={t.name} testimonial={t} />
+            ))}
+            {testimonials.map((t) => (
+              <TestimonialCard key={`dup-${t.name}`} testimonial={t} />
+            ))}
+          </div>
+        </div>
+
+        <div className="marquee-row relative overflow-hidden">
+          <div className="from-background pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-linear-to-r" />
+          <div className="from-background pointer-events-none absolute inset-y-0 right-0 z-10 w-20 bg-linear-to-l" />
+
+          <div className="animate-marquee-reverse flex w-max">
+            {[...testimonials].reverse().map((t) => (
+              <TestimonialCard key={t.name} testimonial={t} />
+            ))}
+            {[...testimonials].reverse().map((t) => (
+              <TestimonialCard key={`dup-${t.name}`} testimonial={t} />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
