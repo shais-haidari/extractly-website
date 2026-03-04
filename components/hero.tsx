@@ -1,6 +1,23 @@
+"use client";
+
 import { Chrome, Star } from "lucide-react";
+import { useCallback } from "react";
 
 export default function Hero() {
+  const handleSeeFeaturesClick = useCallback(
+    (e: React.MouseEvent<HTMLAnchorElement>) => {
+      const target = document.querySelector("#features");
+
+      if (!target) {
+        return;
+      }
+
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    },
+    [],
+  );
+
   return (
     <section className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-32">
       <div className="absolute inset-0 -z-10">
@@ -50,6 +67,7 @@ export default function Hero() {
           </a>
           <a
             href="#features"
+            onClick={handleSeeFeaturesClick}
             className="border-border text-foreground hover:bg-muted inline-flex h-11 items-center rounded-xl border px-6 text-sm font-medium transition-colors"
           >
             See Features

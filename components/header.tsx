@@ -2,7 +2,7 @@
 
 import { cn } from "@/utils/cn";
 import { Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Logo from "./logo";
 
 const navLinks = [
@@ -24,6 +24,29 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleSectionLinkClick = useCallback(
+    (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+      if (!href.startsWith("/#")) {
+        return;
+      }
+
+      if (window.location.pathname !== "/") {
+        return;
+      }
+
+      const selector = href.slice(1);
+      const target = document.querySelector(selector);
+
+      if (!target) {
+        return;
+      }
+
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    },
+    [],
+  );
+
   return (
     <header
       className={cn(
@@ -41,6 +64,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
+              onClick={(e) => handleSectionLinkClick(e, link.href)}
               className="text-muted-foreground hover:text-foreground text-sm transition-colors"
             >
               {link.label}
@@ -75,7 +99,10 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                onClick={() => setMobileOpen(false)}
+                onClick={(e) => {
+                  setMobileOpen(false);
+                  handleSectionLinkClick(e, link.href);
+                }}
                 className="text-muted-foreground hover:text-foreground text-sm transition-colors"
               >
                 {link.label}
