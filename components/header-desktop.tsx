@@ -2,8 +2,8 @@
 
 import { cn } from "@/utils/cn";
 import { useCallback, useEffect, useState } from "react";
-import { navLinks } from "../header";
-import Logo from "../logo";
+import { navLinks } from "./header";
+import Logo from "./logo";
 
 export default function DesktopHeader() {
   const [scrolled, setScrolled] = useState(false);

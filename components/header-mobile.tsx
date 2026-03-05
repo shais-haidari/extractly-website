@@ -3,8 +3,8 @@
 import { cn } from "@/utils/cn";
 import { Menu, X } from "lucide-react";
 import { useCallback, useState } from "react";
-import { navLinks } from "../header";
-import Logo from "../logo";
+import { navLinks } from "./header";
+import Logo from "./logo";
 
 export default function MobileHeader() {
   const [open, setOpen] = useState(false);

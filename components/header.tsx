@@ -1,5 +1,5 @@
-import DesktopHeader from "./headers/desktop";
-import MobileHeader from "./headers/mobile";
+import DesktopHeader from "./header-desktop";
+import MobileHeader from "./header-mobile";
 
 export const navLinks = [
   { label: "Features", href: "/#features" },
