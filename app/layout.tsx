@@ -91,16 +91,21 @@ export default function RootLayout({
       <body
         className={cn(geistSans.variable, spaceGrotesk.variable, "antialiased")}
       >
-        {process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID && (
-          <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID} />
-        )}
+        {process.env.NODE_ENV === "production" &&
+          process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID && (
+            <GoogleAnalytics
+              gaId={process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID}
+            />
+          )}
 
         <ThemeProvider>
-          <Header />
-          {children}
+          <div className="bg-background overflow-x-hidden rounded-t-4xl md:rounded-t-none">
+            <Header />
+            {children}
 
-          <BackToTop />
-          <Footer />
+            <BackToTop />
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>

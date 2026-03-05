@@ -7,14 +7,14 @@ import heroImage from "@/assets/screenshots/hero.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-32">
-      <div className="absolute inset-0 -z-10">
+    <section className="relative pt-32 pb-20 md:pt-40 md:pb-32">
+      <div className="pointer-events-none absolute inset-0 z-0">
         <div className="animate-orb-1 bg-accent/5 absolute -top-32 left-1/4 h-80 w-80 rounded-full blur-3xl" />
         <div className="animate-orb-2 bg-accent/5 absolute -top-20 right-1/4 h-64 w-64 rounded-full blur-3xl" />
         <div className="animate-orb-3 bg-accent/5 absolute top-40 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full blur-3xl" />
       </div>
 
-      <div className="mx-auto max-w-6xl px-6 text-center">
+      <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
         <a
           href="https://chromewebstore.google.com/detail/lnfhnhfnlkjemkgdcppdlijpdjdmnnjd?utm_source=item-share-cb"
           target="_blank"
