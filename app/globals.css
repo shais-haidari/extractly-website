@@ -23,16 +23,14 @@
   --font-heading: var(--font-space-grotesk);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--color-zinc-950);
-    --foreground: var(--color-zinc-50);
-    --muted: var(--color-zinc-900);
-    --muted-foreground: var(--color-zinc-400);
-    --border: var(--color-zinc-800);
-    --accent: var(--color-teal-500);
-    --accent-foreground: white;
-  }
+.dark {
+  --background: var(--color-zinc-950);
+  --foreground: var(--color-zinc-50);
+  --muted: var(--color-zinc-900);
+  --muted-foreground: var(--color-zinc-400);
+  --border: var(--color-zinc-800);
+  --accent: var(--color-teal-500);
+  --accent-foreground: white;
 }
 
 body {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./logo";
+import ThemeToggle from "./theme-toggle";
 
 export default function Footer() {
   return (
@@ -37,7 +38,7 @@ export default function Footer() {
           </nav>
         </div>
 
-        <div className="border-border/50 text-muted-foreground mt-8 border-t pt-6 text-center text-sm">
+        <div className="border-border/50 text-muted-foreground mt-8 flex items-center justify-between border-t pt-6 text-sm">
           <p>
             Built by{" "}
             <a
@@ -49,6 +50,7 @@ export default function Footer() {
               Hassib Moddasser
             </a>
           </p>
+          <ThemeToggle />
         </div>
       </div>
     </footer>

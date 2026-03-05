@@ -7,6 +7,8 @@ import BackToTop from "@/components/back-to-top";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 
+import ThemeProvider from "@/components/providers/theme-provider";
+
 export const metadata: Metadata = {
   title: {
     default: "StorageKit — The Missing DevTools Panel for Browser Storage",
@@ -38,11 +40,13 @@ export default function RootLayout({
       <body
         className={cn(geistSans.variable, spaceGrotesk.variable, "antialiased")}
       >
-        <Header />
-        {children}
+        <ThemeProvider>
+          <Header />
+          {children}
 
-        <BackToTop />
-        <Footer />
+          <BackToTop />
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
