@@ -90,7 +90,7 @@ export default function Showcase() {
               description:
                 "Browse all your storage data in a clean, organized interface. Edit values inline, search across keys, and see changes reflected instantly in the DevTools panel as you work.",
             }}
-            className="rounded-tl-3xl"
+            className="rounded-t-3xl md:rounded-tl-3xl md:rounded-tr-lg"
           />
 
           <LargeCard
@@ -102,7 +102,7 @@ export default function Showcase() {
               description:
                 "Capture your entire storage state including Local storage, Session storage, and Cookies in a single snapshot. Restore it anytime with one click to recreate that exact state.",
             }}
-            className="rounded-tr-3xl"
+            className="md:rounded-tr-3xl"
           />
         </div>
 
@@ -116,7 +116,7 @@ export default function Showcase() {
               description:
                 "StorageKit detects encoded values and shows them decoded. JSON pretty-printed, JWTs reveal payloads, Base64 decoded.",
             }}
-            className="rounded-bl-3xl"
+            className="lg:rounded-bl-3xl"
           />
           <SmallCard
             item={{
@@ -137,7 +137,7 @@ export default function Showcase() {
               description:
                 "Export snapshots to json for backup or sharing. Import to restore on another machine or after reinstalling.",
             }}
-            className="rounded-br-3xl"
+            className="rounded-b-3xl lg:rounded-br-3xl lg:rounded-bl-lg"
           />
         </div>
       </div>

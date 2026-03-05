@@ -10,7 +10,7 @@ export default function BorderBeam({
   delay?: number;
 }) {
   return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit]">
+    <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden rounded-[inherit]">
       <div
         className="animate-border-beam absolute aspect-square"
         style={
