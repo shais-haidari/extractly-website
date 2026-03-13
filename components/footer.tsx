@@ -24,6 +24,12 @@ export default function Footer() {
               Chrome Web Store
             </a>
             <Link
+              href="/changelog"
+              className="text-muted-foreground hover:text-foreground text-sm transition-colors"
+            >
+              Changelog
+            </Link>
+            <Link
               href="/privacy"
               className="text-muted-foreground hover:text-foreground text-sm transition-colors"
             >
