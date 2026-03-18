@@ -53,7 +53,7 @@ export default async function ChangelogPage({
     <main className="mx-auto max-w-3xl px-6 pt-32 pb-16">
       <article className="prose prose-base prose-zinc dark:prose-invert max-w-none">
         <h1 className="mb-0">Changelog</h1>
-        <p className="text-muted-foreground mt-2 text-sm">
+        <p className="text-muted-foreground mt-2 text-base">
           All notable changes to StorageKit are documented here.
         </p>
 

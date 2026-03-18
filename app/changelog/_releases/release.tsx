@@ -2,7 +2,64 @@ export const releases: Record<
   string,
   { tagline: string; content: React.ReactNode }
 > = {
-  "2.2.1": {
+  "2.4.0": {
+    tagline: "JWT decoding and smoother editing",
+    content: (
+      <>
+        <h3>New Features</h3>
+        <ul>
+          <li>
+            <strong>JWT decoding:</strong> decode JWT tokens inside nested JSON
+            keys
+          </li>
+          <li>
+            <strong>Auto-resizing textarea:</strong> value editing textarea
+            grows with content
+          </li>
+          <li>
+            <strong>JWT token badge:</strong> styled badge on tree nodes
+            containing JWT tokens
+          </li>
+        </ul>
+
+        <h3>Bug Fixes</h3>
+        <ul>
+          <li>
+            Fixed layout shift when toggling edit mode in the value panel
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  "2.3.0": {
+    tagline: "Nested JSON tree editor",
+    content: (
+      <>
+        <h3>New Features</h3>
+        <ul>
+          <li>
+            <strong>Nested JSON tree editor:</strong> interactive
+            expand/collapse tree with inline editing
+          </li>
+        </ul>
+
+        <h3>Improvements</h3>
+        <ul>
+          <li>Enhanced copy button styling and tree view toggle</li>
+          <li>Improved inline edit validation and styling</li>
+        </ul>
+
+        <h3>Bug Fixes</h3>
+        <ul>
+          <li>
+            Fixed layout shift when editing a storage item in dashboard layout
+          </li>
+          <li>Fixed toast notification position to bottom-center</li>
+        </ul>
+      </>
+    ),
+  },
+  "2.2.0": {
     tagline: "Create, protect, and polish",
     content: (
       <>
@@ -84,7 +141,7 @@ export const releases: Record<
       </>
     ),
   },
-  "2.1.1": {
+  "2.1.0": {
     tagline: "Add items and a new storage tab",
     content: (
       <>
@@ -111,7 +168,7 @@ export const releases: Record<
       </>
     ),
   },
-  "2.0.1": {
+  "2.0.0": {
     tagline: "A brand new identity and dashboard layout",
     content: (
       <>
