@@ -7,9 +7,8 @@ import SectionLabel from "@/components/section-label";
 import Showcase from "@/components/showcase";
 
 export const metadata: Metadata = {
-  title: "Welcome to StorageKit",
-  description:
-    "You just installed StorageKit — here's what you can do with it.",
+  title: "Welcome to Extractly",
+  description: "You just installed Extractly — here's what you can do with it.",
 };
 
 export default function WelcomePage() {
@@ -29,12 +28,11 @@ export default function WelcomePage() {
           </p>
 
           <h1 className="mx-auto mt-4 max-w-3xl text-3xl leading-tight font-bold tracking-tight md:text-5xl md:leading-[1.15]">
-            Welcome to <span className="text-accent">StorageKit</span>
+            Welcome to <span className="text-accent">Extractly</span>
           </h1>
 
           <p className="text-muted-foreground mx-auto mt-6 max-w-xl text-base leading-relaxed md:text-lg">
-            The missing DevTools panel for browser storage. Click the StorageKit
-            icon in your toolbar to get started.
+            The ultimate AI-powered companion for extracting text everywhere. Click the Extractly icon in your toolbar to get started.
           </p>
         </div>
       </section>
@@ -51,7 +49,7 @@ export default function WelcomePage() {
               href="/"
               className="btn-shine border-border text-foreground hover:bg-muted inline-flex items-center gap-2 rounded-lg border px-3.5 py-2.5 text-sm font-semibold transition-colors"
             >
-              Explore StorageKit
+              Explore Extractly
             </Link>
             <Link
               href="/changelog"

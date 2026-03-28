@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "StorageKit — Browser Storage DevTools",
-    short_name: "StorageKit",
+    name: "Extractly — AI OCR Extension",
+    short_name: "Extractly",
     description:
-      "Inspect, edit, and manage Local storage, Session storage, and Cookies in one clean, powerful Chrome DevTools panel.",
+      "Extract and translate text from any image, video, or website using advanced AI.",
     start_url: "/",
     display: "standalone",
     background_color: "#09090b",

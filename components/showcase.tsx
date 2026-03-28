@@ -73,7 +73,7 @@ function SmallCard({
 
 export default function Showcase() {
   return (
-    <section className="py-14 md:py-20">
+    <section className="py-14 md:py-20" id="features">
       <div className="mx-auto max-w-6xl px-6">
         <SectionLabel
           label="Features"

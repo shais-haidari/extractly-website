@@ -1,6 +1,5 @@
-# StorageKit Website
-
-The marketing website for [StorageKit](https://chromewebstore.google.com/detail/extractly-ai-extract-text/knhdipahdipkhpfjadkibpphgafglcpb), a Chrome extension for inspecting, editing, and managing browser storage.
+# Extractly Website
+The marketing website for [Extractly](https://chromewebstore.google.com/detail/extractly-ai-extract-text/knhdipahdipkhpfjadkibpphgafglcpb), an AI OCR and text extraction Chrome extension.
 
 ## Tech Stack
 

@@ -1,9 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Chrome, Star } from "lucide-react";
+import { Star } from "lucide-react";
 
 import heroImage from "@/assets/screenshots/hero.png";
+import braveIcon from "@/assets/brave-browser-icon.svg";
+import chromeIcon from "@/assets/chrome_web_store.svg";
+import edgeIcon from "@/assets/edge_browser.svg";
+import operaIcon from "@/assets/opera-icon.svg";
 
 export default function Hero() {
   return (
@@ -47,22 +51,38 @@ export default function Hero() {
           Stop typing manually! Extractly turns visual content into editable text and translates it in over 100 languages instantly. Works on images, videos, and restricted sites.
         </p>
 
-        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a
-            href="https://chromewebstore.google.com/detail/extractly-ai-extract-text/knhdipahdipkhpfjadkibpphgafglcpb"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-shine text-accent-foreground inline-flex items-center gap-2 rounded-lg bg-blue-600 px-3.5 py-2.5 text-sm font-semibold"
-          >
-            <Chrome size={16} />
-            Add to Chrome — It&apos;s Free
-          </a>
-          <Link
-            href="/#features"
-            className="btn-shine border-border text-foreground hover:bg-muted inline-flex items-center rounded-lg border px-3.5 py-2.5 text-sm font-semibold transition-colors"
-          >
-            See Features
-          </Link>
+
+        <div className="mt-12 flex flex-wrap justify-center gap-4">
+          {[
+            { browser: "Chrome", icon: chromeIcon },
+            { browser: "Brave", icon: braveIcon },
+            { browser: "Opera", icon: operaIcon },
+            { browser: "Edge", icon: edgeIcon },
+          ].map((item) => (
+            <a
+              key={item.browser}
+              href="https://chromewebstore.google.com/detail/extractly-ai-extract-text/knhdipahdipkhpfjadkibpphgafglcpb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 rounded-xl bg-background px-4 py-2 shadow-sm transition-transform hover:-translate-y-0.5 dark:border dark:border-border"
+            >
+              <Image
+                src={item.icon}
+                alt={`${item.browser} icon`}
+                width={32}
+                height={32}
+                className="h-8 w-8"
+              />
+              <div className="text-left">
+                <div className="text-[11px] font-medium tracking-wide text-muted-foreground">
+                  Available for
+                </div>
+                <div className="text-sm font-semibold leading-tight text-foreground">
+                  {item.browser}
+                </div>
+              </div>
+            </a>
+          ))}
         </div>
 
         <div className="mt-16">

@@ -6,50 +6,31 @@ import SectionLabel from "./section-label";
 
 const testimonials = [
   {
-    name: "Shafiq Farokhi",
+    name: "Sohail Badghisi",
     quote:
-      "Clean UI, good performance, and very practical features. It improved my workflow a lot.",
+      "Very useful extension. Easy to use and works perfectly. I recommend it to anyone who needs this.",
   },
   {
-    name: "Mohammad Emad Rasooli",
+    name: "Shoaib Haidari",
     quote:
-      "Nice extensions for students and professionals. I use it and it looks amazing and useful. Thanks to the developer.",
+      "It works really awesome, it is a great tool I recommend it to everyone.",
   },
   {
-    name: "Ab.Raziq Quraishi",
+    name: "Syniz",
+    quote: "Great extension easy to use.",
+  },
+  {
+    name: "Ehsan Hadid",
+    quote: "Such a great and handy tool",
+  },
+  {
+    name: "Sayed Ashraf Arefi",
+    quote: "Amazing tool! Saves a lot of time when copying text from images.",
+  },
+  {
+    name: "Rafi Haidari",
     quote:
-      "Really handy tool for day-to-day extracting. Extracting text from YouTube videos is a huge time-saver.",
-  },
-  {
-    name: "Monira Karimi",
-    quote: "Much easier to extract text from images and videos than typing it all out.",
-  },
-  {
-    name: "Mujtaba Sadat",
-    quote: "Very efficient tool.",
-  },
-  {
-    name: "Mohammad Hojjat Mahdave",
-    quote:
-      "I was tired of typing text manually from PDFs and images. A handy tool for grabbing text anywhere.",
-  },
-  {
-    name: "Zalmai Yaghoobi",
-    quote:
-      "It has made studying much easier. With this extension, translating and extracting is lightning fast.",
-  },
-  {
-    name: "Omid Ibrahimy",
-    quote: "I love how the text extraction and translation come in one place.",
-  },
-  {
-    name: "Sohrab Rokhshan",
-    quote:
-      "Very useful extension for everyone. Clean interface and simple to use. Great work by the developer!",
-  },
-  {
-    name: "Mohsen Amani",
-    quote: "Great, handy tool.",
+      "This extension is developed by my son Shais Haidari he is 13 y.o. Nice job buddy keep it up.",
   },
 ];
 

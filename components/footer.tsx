@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <Logo />
             <p className="text-muted-foreground mt-1 text-sm">
-              The DevTools panel your browser storage deserves.
+              The ultimate AI-powered companion for extracting text everywhere.
             </p>
           </div>
 
