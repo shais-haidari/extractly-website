@@ -13,16 +13,16 @@ const testimonials = [
   {
     name: "Mohammad Emad Rasooli",
     quote:
-      "Nice extensions for All developers, I use it and it look amazing and useful. Thanks to developer.",
+      "Nice extensions for students and professionals. I use it and it looks amazing and useful. Thanks to the developer.",
   },
   {
     name: "Ab.Raziq Quraishi",
     quote:
-      "Really handy tool for day-to-day debugging. Saving and restoring snapshots is a huge time-saver.",
+      "Really handy tool for day-to-day extracting. Extracting text from YouTube videos is a huge time-saver.",
   },
   {
     name: "Monira Karimi",
-    quote: "Much easier to manage browser storage than using DevTools.",
+    quote: "Much easier to extract text from images and videos than typing it all out.",
   },
   {
     name: "Mujtaba Sadat",
@@ -31,21 +31,21 @@ const testimonials = [
   {
     name: "Mohammad Hojjat Mahdave",
     quote:
-      "I was tired of going through DevTools just to change a single value. A handy tool for inspecting browser storage.",
+      "I was tired of typing text manually from PDFs and images. A handy tool for grabbing text anywhere.",
   },
   {
     name: "Zalmai Yaghoobi",
     quote:
-      "It has made debugging much easier. With this extension, everything is in one place and clearly organized.",
+      "It has made studying much easier. With this extension, translating and extracting is lightning fast.",
   },
   {
     name: "Omid Ibrahimy",
-    quote: "I love how the storage inspection and snapshot come in one place.",
+    quote: "I love how the text extraction and translation come in one place.",
   },
   {
     name: "Sohrab Rokhshan",
     quote:
-      "Very useful extension for developers. Clean interface and simple to use. Great work by the developer!",
+      "Very useful extension for everyone. Clean interface and simple to use. Great work by the developer!",
   },
   {
     name: "Mohsen Amani",

@@ -2,34 +2,34 @@ import SectionLabel from "./section-label";
 
 const faqs = [
   {
-    question: "Is StorageKit free?",
+    question: "Is Extractly free?",
     answer:
-      "Yes, StorageKit is completely free to use for everyone. There are no premium tiers, no feature limits, and no hidden costs.",
+      "Yes, Extractly comes fully free. Unlike other extensions that fail on complex sites and lock features behind premium tiers, we provide a premium experience at no cost.",
   },
   {
-    question: "Does it work on other browsers?",
+    question: "Does it work on YouTube and restricted sites?",
     answer:
-      "StorageKit is currently available for Chrome and all Chromium-based browsers like Edge, Brave, Arc, Opera, etc.",
+      "Yes! Extractly uses a specialized architecture to bypass CSP restrictions, making it work perfectly on sites like YouTube, Instagram, and LinkedIn.",
   },
   {
     question: "Is my data sent anywhere?",
     answer:
-      "No. All data stays in your browser. No analytics, tracking, or network requests—your data never leaves your machine.",
+      "No. Privacy First: All processing happens locally in your browser. Your data never leaves your device.",
   },
   {
-    question: "How are snapshots stored?",
+    question: "How fast is the text extraction?",
     answer:
-      "Chrome's extension storage API persists them across sessions. You can also export them as JSON files for backup.",
+      "Lightning Fast: Persistent engine technology means extractions happen in seconds, allowing you to instantly copy or translate the text.",
   },
   {
-    question: "Can I use it on any website?",
+    question: "How does the instant translation work?",
     answer:
-      "StorageKit works on any regular website. It cannot access restricted pages of browser due to browser security policies.",
+      "After extracting text, you can translate it into around 100 languages instantly using built-in Chrome AI.",
   },
   {
-    question: "Does it support Firefox or Safari?",
+    question: "Can I see my past extractions?",
     answer:
-      "Not yet. StorageKit is currently Chrome-only, but support for other browsers may be added in the future.",
+      "Absolutely. Extractly includes a built-in history management feature so you can keep track of your previous extractions.",
   },
 ];
 

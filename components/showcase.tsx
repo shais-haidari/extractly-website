@@ -1,6 +1,6 @@
 import { cn } from "@/utils/cn";
 import type { LucideIcon } from "lucide-react";
-import { Camera, Eye, FileCode, FileDown, HardDrive } from "lucide-react";
+import { Camera, Globe, Zap, Video, ShieldCheck } from "lucide-react";
 import SectionLabel from "./section-label";
 
 interface ShowcaseItem {
@@ -77,30 +77,30 @@ export default function Showcase() {
       <div className="mx-auto max-w-6xl px-6">
         <SectionLabel
           label="Features"
-          heading="Everything you need to debug storage"
+          heading="Everything you need to extract and translate text"
         />
 
         <div className="mt-12 grid gap-5 md:grid-cols-2">
           <LargeCard
             item={{
-              id: "inspector",
-              label: "Inspector",
-              icon: Eye,
-              title: "Live Storage Inspector",
+              id: "ocr",
+              label: "AI OCR",
+              icon: Camera,
+              title: "Advanced AI OCR",
               description:
-                "Browse all your storage data in a clean, organized interface. Create new entries, edit values inline, and explore nested JSON in an interactive tree without leaving the panel.",
+                "Powered by neural-network technology (Tesseract.js and LSTM) to recognize text with incredible accuracy from any image or video.",
             }}
             className="rounded-t-3xl md:rounded-tl-3xl md:rounded-tr-lg"
           />
 
           <LargeCard
             item={{
-              id: "snapshots",
-              label: "Snapshots",
-              icon: Camera,
-              title: "Save & Restore States",
+              id: "translate",
+              label: "Translation",
+              icon: Globe,
+              title: "Instant Translation",
               description:
-                "Capture your entire storage state including Local storage, Session storage, and Cookies in a single snapshot. Restore it anytime with one click to recreate that exact state.",
+                "Translate extracted text into around 100 languages instantly using built-in Chrome AI.",
             }}
             className="md:rounded-tr-3xl"
           />
@@ -109,33 +109,33 @@ export default function Showcase() {
         <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           <SmallCard
             item={{
-              id: "decoding",
-              label: "Decoding",
-              icon: FileCode,
-              title: "Automatic Value Decoding",
+              id: "fast",
+              label: "Speed",
+              icon: Zap,
+              title: "Lightning Fast",
               description:
-                "Nested JSON opens as an interactive, expandable tree. JWT tokens are decoded inline with a visual badge. Numbers, booleans, and encoded values are auto-detected.",
+                "Persistent engine technology means extractions happen in seconds, saving you valuable time.",
             }}
             className="lg:rounded-bl-3xl"
           />
           <SmallCard
             item={{
-              id: "storage",
-              label: "Storage",
-              icon: HardDrive,
-              title: "Storage Overview",
+              id: "video",
+              label: "Video & Restricted Sites",
+              icon: Video,
+              title: "Works Where Others Fail",
               description:
-                "See item counts and storage size for localStorage, sessionStorage, and cookies at a glance. Create new entries or clear storage by type.",
+                "Grab subtitles, lyrics, or notes directly from YouTube videos. Bypasses CSP restrictions on sites like Instagram and LinkedIn.",
             }}
           />
           <SmallCard
             item={{
-              id: "export-import",
-              label: "Export & Import",
-              icon: FileDown,
-              title: "Backup and Restore Snapshots",
+              id: "privacy",
+              label: "Privacy & History",
+              icon: ShieldCheck,
+              title: "Privacy First",
               description:
-                "Export snapshots to json for backup or sharing. Import to restore on another machine or after reinstalling.",
+                "All processing happens locally in your browser. Plus, keep track of your previous extractions with a built-in history log.",
             }}
             className="rounded-b-3xl lg:rounded-br-3xl lg:rounded-bl-lg"
           />

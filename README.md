@@ -1,6 +1,6 @@
 # StorageKit Website
 
-The marketing website for [StorageKit](https://chromewebstore.google.com/detail/storagekit/lnfhnhfnlkjemkgdcppdlijpdjdmnnjd), a Chrome extension for inspecting, editing, and managing browser storage.
+The marketing website for [StorageKit](https://chromewebstore.google.com/detail/extractly-ai-extract-text/knhdipahdipkhpfjadkibpphgafglcpb), a Chrome extension for inspecting, editing, and managing browser storage.
 
 ## Tech Stack
 

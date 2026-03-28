@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Logo from "./logo";
-import ThemeToggle from "./theme-toggle";
 
 export default function Footer() {
   return (
@@ -16,7 +15,7 @@ export default function Footer() {
 
           <nav className="flex items-center gap-6">
             <a
-              href="https://chromewebstore.google.com/detail/lnfhnhfnlkjemkgdcppdlijpdjdmnnjd?utm_source=item-share-cb"
+              href="https://chromewebstore.google.com/detail/extractly-ai-extract-text/knhdipahdipkhpfjadkibpphgafglcpb"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground text-sm transition-colors"
@@ -36,7 +35,7 @@ export default function Footer() {
               Privacy Policy
             </Link>
             <a
-              href="mailto:info@hassib.co"
+              href="mailto:haidari.shais@gmail.com"
               className="text-muted-foreground hover:text-foreground text-sm transition-colors"
             >
               Contact
@@ -48,15 +47,22 @@ export default function Footer() {
           <p>
             Built by{" "}
             <a
-              href="https://www.hassib.co"
+              href="https://hassib.co"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:text-accent font-medium transition-colors"
             >
               Hassib Moddasser
+            </a> | Maintained by{" "}
+            <a
+              href="https://github.com/ShaisHaidari"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-accent font-medium transition-colors"
+            >
+              Shais Haidari
             </a>
           </p>
-          <ThemeToggle />
         </div>
       </div>
     </footer>

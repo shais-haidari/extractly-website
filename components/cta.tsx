@@ -7,18 +7,17 @@ export default function CTA() {
         <div className="border-border bg-muted/30 relative isolate overflow-hidden rounded-3xl border px-6 py-16 sm:py-20 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-semibold tracking-tight text-balance md:text-4xl">
-              Ready to debug smarter?
+              Ready to extract like a pro?
             </h2>
             <p className="text-muted-foreground mx-auto mt-6 max-w-xl text-lg leading-relaxed text-pretty">
-              Join developers who use StorageKit to save time debugging web
-              storage. Free, private, and open source.
+              Install Extractly today and start extracting like a pro. Free, secure, and lightning-fast.
             </p>
             <div className="mt-10 flex items-center justify-center gap-6">
               <a
-                href="https://chromewebstore.google.com/detail/lnfhnhfnlkjemkgdcppdlijpdjdmnnjd?utm_source=item-share-cb"
+                href="https://chromewebstore.google.com/detail/extractly-ai-extract-text/knhdipahdipkhpfjadkibpphgafglcpb"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-shine text-accent-foreground inline-flex items-center gap-2 rounded-lg bg-teal-600 px-4 py-2.5 text-sm font-semibold"
+                className="btn-shine text-accent-foreground inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold"
               >
                 <Chrome size={18} />
                 Add to Chrome — It&apos;s Free

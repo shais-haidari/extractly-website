@@ -7,20 +7,18 @@ export default function Problem() {
 
       <div className="mx-auto max-w-3xl px-6 text-center">
         <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
-          Debugging storage shouldn&apos;t slow you down
+          Stop typing text manually!
         </h2>
         <div className="text-muted-foreground mx-auto mt-8 max-w-2xl space-y-4 text-base leading-relaxed md:text-lg">
           <p>
-            Manually clearing Local storage to test different states. Editing
-            cookies one by one to switch accounts. Copying storage values to
-            decode JWTs on external sites.
+            Struggling to extract text from images, videos, PDFs, and restricted sites like YouTube or Instagram?
           </p>
           <p>
             It&apos;s tedious work that interrupts your flow.{" "}
             <span className="text-foreground font-medium">
-              StorageKit eliminates the friction
+              Extractly eliminates the friction
             </span>{" "}
-            so you can focus on building.
+            so you can focus on being productive.
           </p>
         </div>
       </div>

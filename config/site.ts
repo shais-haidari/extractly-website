@@ -1,16 +1,16 @@
 export const siteConfig = {
-  name: "StorageKit",
-  url: "https://www.storagekit.dev",
-  title: "StorageKit — The Missing DevTools Panel for Browser Storage",
+  name: "Extractly",
+  url: "https://extractly.ai",
+  title: "Extractly — AI OCR, Extract and Translate Text Anywhere",
   description:
-    "Inspect, edit, and manage Local storage, Session storage, and Cookies in one clean, powerful Chrome DevTools panel.",
+    "Lightning-fast AI OCR! Extract and translate text from any image, video, or website. Works on YouTube and restricted sites in a single click.",
   author: {
-    name: "Hassib Moddasser",
-    url: "https://www.hassib.co",
+    name: "Extractly Team",
+    url: "https://extractly.ai",
   },
   links: {
     chromeWebStore:
-      "https://chromewebstore.google.com/detail/lnfhnhfnlkjemkgdcppdlijpdjdmnnjd?utm_source=item-share-cb",
-    github: "https://github.com/hassibmoddasser/storagekit-extension",
+      "https://chromewebstore.google.com/detail/extractly-ai-extract-text/knhdipahdipkhpfjadkibpphgafglcpb",
+    github: "https://github.com",
   },
 } as const;

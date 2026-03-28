@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Chrome, Star } from "lucide-react";
 
-import heroImage from "@/assets/screenshots/hero.jpg";
+import heroImage from "@/assets/screenshots/hero.png";
 
 export default function Hero() {
   return (
@@ -16,7 +16,7 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
         <a
-          href="https://chromewebstore.google.com/detail/lnfhnhfnlkjemkgdcppdlijpdjdmnnjd?utm_source=item-share-cb"
+          href="https://chromewebstore.google.com/detail/extractly-ai-extract-text/knhdipahdipkhpfjadkibpphgafglcpb"
           target="_blank"
           rel="noopener noreferrer"
           className="shimmer-pill bg-background group inline-flex flex-col items-center gap-1 rounded-full px-8 py-2.5 text-sm"
@@ -39,21 +39,20 @@ export default function Hero() {
         </a>
 
         <h1 className="mx-auto mt-8 max-w-3xl text-3xl leading-tight font-bold tracking-tight md:text-5xl md:leading-[1.15]">
-          The Missing DevTools Panel for{" "}
-          <span className="text-accent">Browser Storage</span>
+          The Ultimate AI-Powered Companion for{" "}
+          <span className="text-accent">Extracting Text</span>
         </h1>
 
         <p className="text-muted-foreground mx-auto mt-6 max-w-xl text-base leading-relaxed md:text-lg">
-          Inspect, edit, and manage Local storage, Session storage, and Cookies
-          in one clean, powerful interface.
+          Stop typing manually! Extractly turns visual content into editable text and translates it in over 100 languages instantly. Works on images, videos, and restricted sites.
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="https://chromewebstore.google.com/detail/lnfhnhfnlkjemkgdcppdlijpdjdmnnjd?utm_source=item-share-cb"
+            href="https://chromewebstore.google.com/detail/extractly-ai-extract-text/knhdipahdipkhpfjadkibpphgafglcpb"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-shine text-accent-foreground inline-flex items-center gap-2 rounded-lg bg-teal-600 px-3.5 py-2.5 text-sm font-semibold"
+            className="btn-shine text-accent-foreground inline-flex items-center gap-2 rounded-lg bg-blue-600 px-3.5 py-2.5 text-sm font-semibold"
           >
             <Chrome size={16} />
             Add to Chrome — It&apos;s Free
@@ -70,7 +69,7 @@ export default function Hero() {
           <div className="border-border bg-muted/50 mx-auto max-w-4xl overflow-hidden rounded-2xl border shadow-2xl">
             <Image
               src={heroImage}
-              alt="StorageKit Chrome DevTools panel"
+              alt="Extractly Chrome extension UI"
               width={1560}
               height={1160}
               priority

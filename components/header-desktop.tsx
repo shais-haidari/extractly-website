@@ -4,6 +4,7 @@ import { cn } from "@/utils/cn";
 import { useCallback, useEffect, useState } from "react";
 import { navLinks } from "./header";
 import Logo from "./logo";
+import ThemeToggle from "./theme-toggle";
 
 export default function DesktopHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -53,14 +54,18 @@ export default function DesktopHeader() {
           ))}
         </nav>
 
-        <a
-          href="https://chromewebstore.google.com/detail/lnfhnhfnlkjemkgdcppdlijpdjdmnnjd?utm_source=item-share-cb"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-shine text-accent-foreground inline-flex h-9 items-center rounded-lg bg-teal-600 px-4 text-sm font-medium transition-opacity hover:opacity-90"
-        >
-          Add to Chrome
-        </a>
+        <div className="flex items-center gap-4">
+          <a
+            href="https://chromewebstore.google.com/detail/extractly-ai-extract-text/knhdipahdipkhpfjadkibpphgafglcpb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-shine text-accent-foreground inline-flex h-9 items-center rounded-lg bg-blue-600 px-4 text-sm font-medium transition-opacity hover:opacity-90"
+          >
+            Add to Chrome
+          </a>
+          <div className="h-6 w-px bg-border" />
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );

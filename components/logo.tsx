@@ -1,6 +1,6 @@
 "use client";
 
-import icon from "@/assets/icon.svg";
+import icon from "@/assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,13 +18,13 @@ export default function Logo() {
     >
       <Image
         src={icon}
-        alt="StorageKit"
+        alt="Extractly"
         width={28}
         height={28}
         className="rounded-lg"
       />
       <span className="font-heading">
-        Storage<span className="text-teal-400">Kit</span>
+        Extract<span className="text-accent">ly</span>
       </span>
     </Link>
   );

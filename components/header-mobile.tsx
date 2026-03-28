@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import { useCallback, useState } from "react";
 import { navLinks } from "./header";
 import Logo from "./logo";
+import ThemeToggle from "./theme-toggle";
 
 export default function MobileHeader() {
   const [open, setOpen] = useState(false);
@@ -27,13 +28,16 @@ export default function MobileHeader() {
       <header className="relative z-50 w-full border-b border-transparent md:hidden">
         <div className="flex h-16 items-center justify-between px-6">
           <Logo />
-          <button
-            onClick={() => setOpen(!open)}
-            className="text-muted-foreground hover:text-foreground inline-flex items-center justify-center rounded-md p-2"
-            aria-label="Toggle menu"
-          >
-            {open ? <X size={20} /> : <Menu size={20} />}
-          </button>
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              onClick={() => setOpen(!open)}
+              className="text-muted-foreground hover:text-foreground inline-flex items-center justify-center rounded-md p-2"
+              aria-label="Toggle menu"
+            >
+              {open ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
         </div>
 
         <div
@@ -58,7 +62,7 @@ export default function MobileHeader() {
                 </a>
               ))}
               <a
-                href="https://chromewebstore.google.com/detail/lnfhnhfnlkjemkgdcppdlijpdjdmnnjd?utm_source=item-share-cb"
+                href="https://chromewebstore.google.com/detail/extractly-ai-extract-text/knhdipahdipkhpfjadkibpphgafglcpb"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-shine bg-accent text-accent-foreground inline-flex h-9 items-center justify-center rounded-lg px-4 text-sm font-medium transition-opacity hover:opacity-90"
